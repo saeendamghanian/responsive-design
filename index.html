@@ -24,14 +24,11 @@
       </div>
       <div class="section content">
         <div class="illustration">
-          <img
-            src="images/illustration-small.png"
-            srcset="
-              images/illustration-small.png 1x,
-              images/illustration-big.png   2x
-            "
-            style="max-width: 500px"
-          />
+          <picture>
+            <source media='(min-width: 401px)' srcset='images/photo-big.jpg' />
+            <source media='(max-width: 400px)' srcset='images/photo-tall.jpg' />
+            <img src='iamges/photo-small.jpg' />
+          </picture> 
         </div>
       </div>
       <div class="section sign-up">
